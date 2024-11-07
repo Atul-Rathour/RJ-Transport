@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Main';
+    src: url('./assets/Font/ArrivalApercuMonoPro-Regular.woff2') format('woff2');
+}
+
+body{
+    font-family: 'Main';
+}
+/*   
+import Img1 from '../assets/images/Page1/img1.webp'
+import Img2 from '../assets/images/Page1/main page.webp'
+import Img3 from '../assets/images/Page1/stearing.webp'
+import Img4 from '../assets/images/Page1/trial-hero-1x.webp'
+
+const ImageCarousel = () => {
+  const imageUrls = [
+    Img1,
+    Img2,
+    Img3,
+    Img4
+];
+ */
+
+ @keyframes loading {
+    0% {
+      background-size: 0% 100%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+  
+  .animate-loading {
+    animation: loading 5s linear infinite;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+.upperShadow{
+    background: linear-gradient(rgb(15, 16, 17) 0%, rgba(16, 17, 18, 0.71) 31.25%, rgba(15, 16, 17, 0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 240px;
+    width: 100%;
+    z-index: 0;
+}
+
+.kmoIMz {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
