@@ -6,6 +6,7 @@ const Page1 = () => {
   return (
     <>
         <ImageCarousel/>
+        
     </>
   );
 };
