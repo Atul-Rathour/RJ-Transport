@@ -9,21 +9,47 @@
 
 body{
     font-family: 'Main';
+    background-color: #0F1011;
+    overflow-x: hidden;
 }
-/*   
-import Img1 from '../assets/images/Page1/img1.webp'
-import Img2 from '../assets/images/Page1/main page.webp'
-import Img3 from '../assets/images/Page1/stearing.webp'
-import Img4 from '../assets/images/Page1/trial-hero-1x.webp'
+/* 
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+}
 
-const ImageCarousel = () => {
-  const imageUrls = [
-    Img1,
-    Img2,
-    Img3,
-    Img4
-];
- */
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .3s;
+} */
+
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+  position: relative; /* Added to position the pseudo-element relative to the link */
+  color: #fff;
+}
+
+.cool-link::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width 0.3s; /* Animation timing */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cool-link:hover::after {
+  width: 100%; /* Changes width on hover to create the underline effect */
+}
+
 
  @keyframes loading {
     0% {
@@ -51,6 +77,36 @@ const ImageCarousel = () => {
     z-index: 0;
 }
 
+.leftShadow{
+    position: absolute;
+    left: -1px;
+    top: 0px;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(15, 16, 17) 0%, rgba(16, 17, 18, 0.71) 31.25%, rgba(15, 16, 17, 0) 100%);
+    max-width: 50%;
+    width: 645px;
+    z-index: 0;
+}
+.rightShadow{
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(15, 16, 17, 0) 0%, rgba(16, 17, 18, 0.71) 31.25%, rgb(15, 16, 17) 100%);
+    max-width: 50%;
+    width: 645px;
+    z-index: 0;
+}
+
+.bottomShadow{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(0deg, rgb(15, 16, 17) 0%, rgba(16, 17, 18, 0.71) 31.25%, rgba(15, 16, 17, 0) 100%);
+}
+
 .kmoIMz {
     font-style: normal;
     font-weight: normal;
@@ -58,4 +114,10 @@ const ImageCarousel = () => {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.coolHover:hover ~ .coolImg {
+  transform: scale(1.5);
+  transition: all 2s ease-in-out;
+  cursor: pointer;
 }

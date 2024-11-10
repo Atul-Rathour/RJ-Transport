@@ -1,0 +1,8 @@
+1) home
+-----> Navbar
+-----> main carousel
+-----> clients banner
+-----> about company
+-----> About products
+-----> why US 
+-----> footer

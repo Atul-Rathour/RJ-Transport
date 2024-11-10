@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 import './App.css'
-import Page1 from './Page1/Page1'
+import Home from './Pages/Home'
 
 const App = () => {
   return (
     <>
       <Navbar/>
-      <Page1/>
+     <Home/>
+     <Footer/>
     </>
   )
 }

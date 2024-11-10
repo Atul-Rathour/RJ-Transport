@@ -9,8 +9,32 @@ export default {
       colors:{
         customGray : '#2E2F32E0',
         textGray : 'rgba(255, 255, 255, 0.88)'
-      }
+      },
+
+      animation: {
+        marquee  : 'marquee 40s linear infinite',
+        marquee2  : 'marquee2 40s linear infinite'
+      },
+
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}){
+      addUtilities({
+        '.animation-pause' : {
+          'animation-play-state' : 'paused'
+        }
+      })
+    }
+  ],
 }
