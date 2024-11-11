@@ -1,6 +1,6 @@
 import React from "react";
 import TransLogo from "../assets/images/logo/transparentLogo.png";
-// import "./Navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
