@@ -26,6 +26,11 @@ export default {
           "100%": { transform: "translateX(0%)" },
         },
       },
+
+      screens:{
+        mobile: '350px'
+      }
+
     },
   },
   plugins: [

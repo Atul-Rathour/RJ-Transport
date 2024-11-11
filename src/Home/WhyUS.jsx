@@ -47,7 +47,7 @@ const WhyUS = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ms-10 me-10">
         {data.map((data, i) => (
-          <div key={i} className="h-[200px] ps-5 pe-5 bg-[#1D1E1F]">
+          <div key={i} className="h-[200px] sm:h-[250px] mobile:h-[300px] ps-5 pe-5 bg-[#1D1E1F]">
             <p className="text-textGray tracking-tight text-[1.2rem] mt-2 ">
               {data.title}
             </p>

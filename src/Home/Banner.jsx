@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner = () => {
-  const content = ['SHOP FW24 COLLECTION', '14 DAY RETURNS', 'FREE SHIPPING ON ALL ORDERS'];
+  const content = ['Exports Across the world', 'Safe and Secure', 'Seamless Supply solution '];
   
   // Create double content for seamless scrolling
   const repeatedContent = [...content, ...content, ...content, ...content];

@@ -1,0 +1,28 @@
+@media (max-width: 600px){
+    .menu{
+        display: none;
+    }
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: block;
+    }
+}
+
+@media (min-width: 600px){
+    .menu{
+        display: flex;
+    }
+
+    .icon{
+        display:none
+    }
+
+    .nav{
+        justify-content: start;
+    }
+}
+

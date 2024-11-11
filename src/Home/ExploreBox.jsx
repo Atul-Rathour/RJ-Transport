@@ -40,7 +40,7 @@ const products = [
 
 const ExploreBox = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 ms-10 me-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mobile:gap-10 mt-10 ms-10 me-10">
       {products.map((product, index) => (
         <div key={index} className="relative overflow-hidden">
           <div className="h-[250px] sm:h-[300px] lg:h-[400px] overflow-hidden">
