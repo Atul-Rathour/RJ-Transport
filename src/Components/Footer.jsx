@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="bottomShadow  "></div>
 
         <div className="flex flex-wrap items-center justify-between w-[100vw] relative">
-          <div className="lg:w-[300px] md:w-[100vw] sm:w-[100vw] flex items-center justify-center " >
+          <div className="lg:w-[300px] md:w-[100vw] sm:w-[100vw] mobile:w-[100vw] flex items-center justify-center " >
             <div className="w-[300px] h-[300px] ms-8 flex flex-wrap justify-center items-center flex-col relative z-2  mt-[1rem] ">
               <div className="w-[70%] h-[70%] relative z-2 ">
                 <img src={Logo} className="w-full h-full object-cover" alt="" />
