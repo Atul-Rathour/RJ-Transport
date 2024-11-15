@@ -105,8 +105,8 @@ const Intro = ({ isLoading }) => {
   return (
     <div className=" fixed w-[100vw] bg-transparent h-[100vh] ">
       <div className="absolute w-[100vw] h-full flex ">
-        <div className="w-[50%] h-full bg-[#212529] left"></div>
-        <div className="w-[50%] h-full bg-[#212529] right"></div>
+        <div className="w-[50%] h-full bg-[#212529]  left"></div>
+        <div className="w-[50%] h-full bg-[#212529]  right"></div>
       </div>
 
       <div className="relative ps-[10vw] pe-[10vw] flex w-full h-full justify-between">

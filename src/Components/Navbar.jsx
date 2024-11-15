@@ -9,16 +9,16 @@ const Navbar = () => {
   return (
     <>
       <div className=" fixed flex nav w-[100vw] justify-between ps-10 lg:pe-20 mobile:pe-5 pt-5 pb-5  border-[#3F4041] z-[100] ">
-        <div className="logo w-[70px] h-[100px]">
+        <a className="logo w-[70px] h-[100px] link ">
           <img src={TransLogo} className="w-full h-full object-cover" alt="" />
-        </div>
+        </a>
 
         <div className="flex text-textGray items-center ">
           <div>EST-2022</div>
 
           <div>
-            <div class="left open-menu cursor-pointer ">
-              <div class="icon cursor-pointer ">
+            <a class="left open-menu link ">
+              <div class="icon">
                 <div class="main">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +179,7 @@ const Navbar = () => {
                 </div>
               </div>
               <h3>MENU</h3>
-            </div>
+            </a>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
+import Cursor from "./Components/Cursor/Cursor";
 
 const App = () => {
   const [isLoading, setIsloading] = useState(true);
@@ -24,20 +25,21 @@ const App = () => {
     }
   }, [isLoading]);
 
+  
+
   return (
-    <>
+    <div id="main" >
       {!introComplete && <Intro isLoading={isLoading} />}
 
       {introComplete && (
-        <>
+        <div  >
+        <Cursor />
           <Navbar />
           <Home />
           <Footer />
-        </>
+        </div>
       )}
-
-      {/* <Intro/> */}
-    </>
+    </div>
   );
 };
 

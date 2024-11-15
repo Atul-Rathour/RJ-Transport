@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^11.11.15",
+    "@studio-freight/lenis": "^1.0.42",
+    "framer-motion": "^11.11.17",
     "gsap": "^3.12.5",
     "j---k-transport": "file:",
+    "lenis": "^1.1.16",
+    "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.454.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "scrollmagic": "^2.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

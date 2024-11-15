@@ -8,7 +8,8 @@ export default {
     extend: {
       colors:{
         customGray : '#2E2F32E0',
-        textGray : 'rgba(255, 255, 255, 0.88)'
+        textGray : 'rgba(255, 255, 255, 0.88)',
+        bgGray : '#0F1011'
       },
 
       animation: {

@@ -11,7 +11,13 @@ body{
     font-family: 'Main';
     background-color: #0F1011;
     overflow-x: hidden;
+    cursor: none;
 }
+
+a{
+  cursor: none;
+}
+
 /* 
 .cool-link {
   display: inline-block;

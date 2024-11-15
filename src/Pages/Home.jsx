@@ -4,6 +4,7 @@ import Page1 from '../Home/Page1'
 import AboutCompany from '../Home/AboutCompany'
 import Goods from '../Home/Goods'
 import WhyUs from '../Home/WhyUS'
+import LocomotiveImage from '../Components/LocomotiveImage'
 
 const Home = () => {
   return (
@@ -11,9 +12,10 @@ const Home = () => {
         <Page1/>
         <Banner/>
         <AboutCompany/>
+        {/* <LocomotiveImage/> */}
         <Goods/>
         <WhyUs/>
-        {/* <Lab/> */}
+
     </div>
   )
 }
