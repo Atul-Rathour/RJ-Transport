@@ -5,6 +5,7 @@ import AboutCompany from '../Home/AboutCompany'
 import Goods from '../Home/Goods'
 import WhyUs from '../Home/WhyUS'
 import LocomotiveImage from '../Components/LocomotiveImage'
+import Blogs from '../Home/Blogs'
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         <Page1/>
         <Banner/>
         <AboutCompany/>
-        {/* <LocomotiveImage/> */}
+        <Blogs/>
         <Goods/>
         <WhyUs/>
 

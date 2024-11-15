@@ -3,11 +3,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "../assets/images/company.jpg";
+// import Image from "../assets/images/company.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const LocomotiveImage = () => {
+const LocomotiveImage = ({Image}) => {
   const controls = useAnimation();
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true });
@@ -17,7 +17,7 @@ const LocomotiveImage = () => {
     // Trigger Framer Motion width animation when the container is in view
     if (isInView) {
       controls.start({
-        width: "60%",
+        width: "100%",
         transition: { duration: 1, ease: "easeOut" },
       });
     }
@@ -41,21 +41,19 @@ const LocomotiveImage = () => {
   }, [controls, isInView]);
 
   return (
-    <div className="mt-20 mb-20 w-[100vw] bg-bgGray h-[80vh] flex justify-center items-center">
-      <motion.div
-        ref={containerRef}
-        className="scroll-container overflow-hidden h-[500px]"
-        initial={{ width: "0%" }}
-        animate={controls}
-      >
-        <img
-          ref={imageRef}
-          src={Image}
-          className="scroll-image w-full h-full object-cover"
-          alt=""
-        />
-      </motion.div>
-    </div>
+    <motion.div
+      ref={containerRef}
+      className="scroll-container overflow-hidden h-full w-full "
+      initial={{ width: "0%" }}
+      animate={controls}
+    >
+      <img
+        ref={imageRef}
+        src={Image}
+        className="scroll-image w-full h-full object-cover"
+        alt=""
+      />
+    </motion.div>
   );
 };
 
