@@ -413,8 +413,8 @@ const Navbar = ({ handleOpen }) => {
           </a>
         </div>
         <div className="right w-[50%] h-full flex relative bg-[#212529] ">
-          <div
-            className="close-menu absolute overflow-hidden flex gap-[1rem] items-center cursor-pointer top-10 right-10"
+          <a
+            className="close-menu absolute overflow-hidden flex gap-[1rem] items-center top-10 right-10"
             onClick={closeMenu}
           >
             <div class="cross text ">
@@ -521,7 +521,7 @@ const Navbar = ({ handleOpen }) => {
             <div className="overflow-hidden">
               <p className="text-textGray text ">close</p>
             </div>
-          </div>
+          </a>
 
           <div className="w-full h-full mb-10 pt-5  flex flex-col  items-center justify-between">
             <div className="w-[300px] h-[300px] mobile:hidden sm:hidden lg:block md:block   border-[1px] border-[#fff] p-10 rounded-full ">
