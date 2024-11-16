@@ -22,14 +22,14 @@ const Footer = () => {
         <div className="bottomShadow  "></div>
 
         <div className="flex flex-wrap items-center justify-between w-[100vw] relative">
-          <div className="lg:w-[300px] md:w-[100vw] sm:w-[100vw] mobile:w-[100vw] flex items-center justify-center " >
+          <div className="lg:w-[300px] md:w-[100vw] sm:w-[100vw] mobile:w-[100vw] flex items-center justify-center ">
             <div className="w-[300px] h-[300px] ms-8 flex flex-wrap justify-center items-center flex-col relative z-2  mt-[1rem] ">
               <div className="w-[70%] h-[70%] relative z-2 ">
                 <img src={Logo} className="w-full h-full object-cover" alt="" />
               </div>
 
               <p className="text-[#fff] text-[1.3rem] whitespace-nowrap">
-                R&J Food Trading Co 
+                R&J Food Trading Co
               </p>
             </div>
           </div>
@@ -68,12 +68,12 @@ const Footer = () => {
                     Dubai, UAE
                   </p>
 
-                  <a href="" className="text-textGray mt-3 ">
-                    +91 9658743211
+                  <a href="" className="text-textGray mt-3  ">
+                    <p className="cool-link" >+91 9658743211</p>
                   </a>
 
-                  <a href="" className="text-textGray mt-3 ">
-                    contact@RJTrading.com
+                  <a href="" className="text-textGray mt-3  ">
+                    <p className="cool-link" >contact@RJTrading.com</p>
                   </a>
                 </div>
               </div>

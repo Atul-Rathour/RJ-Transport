@@ -40,7 +40,7 @@ const AboutCompany = () => {
         <img
           src={Img2}
           alt="light bulb"
-          className="group-hover:scale-110 group-hover:cursor-pointer transition-transform duration-1000 w-full h-full object-cover"
+          className="group-hover:scale-110 transition-transform duration-1000 w-full h-full object-cover"
         />
         <div className="upperShadow"></div>
       </div>
@@ -50,7 +50,7 @@ const AboutCompany = () => {
         <img
           src={Img3}
           alt="tall building"
-          className="group-hover:scale-110 group-hover:cursor-pointer transition-transform duration-1000 w-full h-full object-cover"
+          className="group-hover:scale-110 transition-transform duration-1000 w-full h-full object-cover"
         />
         <div className="upperShadow"></div>
         <div className="leftShadow"></div>
@@ -61,7 +61,7 @@ const AboutCompany = () => {
         <img
           src={Img1}
           alt="company building"
-          className="group-hover:scale-110 group-hover:cursor-pointer transition-transform duration-1000 w-full h-full object-cover"
+          className="group-hover:scale-110 transition-transform duration-1000 w-full h-full object-cover"
         />
         <div className="upperShadow"></div>
       </div>

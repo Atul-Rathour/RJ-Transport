@@ -85,7 +85,7 @@ const ImageCarousel = () => {
 
       <div className="absolute ms-5 me-5 bottom-10 left-0 right-0 flex justify-center space-x-2">
         {carouselArray.map((item, index) => (
-          <div key={index} className="flex  flex-col z-[2] justify-end cursor-pointer w-[100%] group"
+          <a key={index} className="flex  flex-col z-[2] justify-end w-[100%] group"
           onClick={() => handleSlideChange(index)}>
             <div
               className={`content relative mb-5 text-textGray opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
@@ -124,12 +124,12 @@ const ImageCarousel = () => {
                 }}
               />
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
-      <button
-        className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+      <a
+        className="absolute top-1/2 left-4 -translate-y-1/2 text-textGray bg-customGray z-[2] pt-5 pb-5 rounded-sm "
         onClick={() =>
           setCurrentIndex(
             (prevIndex) => (prevIndex - 1 + carouselArray.length) % carouselArray.length
@@ -137,16 +137,16 @@ const ImageCarousel = () => {
         }
       >
         <ChevronLeft size={32} />
-      </button>
+      </a>
 
-      <button
-        className="absolute top-1/2 right-4 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+      <a
+        className="absolute top-1/2 right-4 -translate-y-1/2 text-textGray bg-customGray z-[2] pt-5 pb-5 rounded-sm "
         onClick={() =>
           setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselArray.length)
         }
       >
         <ChevronRight size={32} />
-      </button>
+      </a>
     </div>
   );
 };

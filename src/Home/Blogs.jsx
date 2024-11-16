@@ -6,7 +6,7 @@ import LocomotiveImage from "../Components/LocomotiveImage";
 
 const Blogs = () => {
   return (
-    <div className="flex mobile:flex-col lg:flex-row w-[100vw] lg:h-[100vh] mobile:h-[200vh] ps-10 pe-10 mt-[20rem] mb-[10rem] overflow-hidden ">
+    <div className="flex mobile:flex-col lg:flex-row w-[100vw] lg:h-[100vh] mobile:h-[200vh] ps-10 pe-10 mt-[10rem] mb-[10rem] overflow-hidden ">
       <div className="h-full flex lg:w-[25%] mobile:w-[100%] pt-20 justify-between mobile:items-center lg:items-start flex-col gap-[2rem] ">
         <div className="ms-2">
           <div className="w-[150px] h-[150px] ">
