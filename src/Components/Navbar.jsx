@@ -523,7 +523,7 @@ const Navbar = ({ handleOpen }) => {
             </div>
           </div>
 
-          <div className="w-full h-full mb-10 pt-5  flex flex-col gap-[5rem] items-center justify-between">
+          <div className="w-full h-full mb-10 pt-5  flex flex-col  items-center justify-between">
             <div className="w-[300px] h-[300px] mobile:hidden sm:hidden lg:block md:block   border-[1px] border-[#fff] p-10 rounded-full ">
               <img
                 src={TransLogo}
