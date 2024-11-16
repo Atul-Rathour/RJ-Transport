@@ -8,7 +8,7 @@ import React, {
   useState,
 } from "react";
 import gsap from "gsap";
-// import './Menu.css'
+import './Menu.css'
 
 const Navbar = ({ handleOpen }) => {
   const timelineRef = useRef(null);
