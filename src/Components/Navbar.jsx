@@ -1,16 +1,13 @@
 import "./Navbar.css";
 import TransLogo from "../assets/images/logo/transparentLogo.png";
 import React, {
-  forwardRef,
   useEffect,
-  useImperativeHandle,
   useRef,
-  useState,
 } from "react";
 import gsap from "gsap";
 import './Menu.css'
 
-const Navbar = ({ handleOpen }) => {
+const Navbar = () => {
   const timelineRef = useRef(null);
 
   // useEffect(() => {
@@ -330,7 +327,7 @@ const Navbar = ({ handleOpen }) => {
       </div> */}
 
       <div className="menu-panel fixed hidden mobile:flex-col lg:flex-row sm:flex-col md:flex-row flex w-[100vw] h-[100vh] z-[101] overflow-hidden ">
-        <div className="left flex flex-col w-[50%] h-full bg-[#f0f4ef]">
+        <div className="left flex flex-col lg:w-[50%] md:w-[50%] mobile:w-[100%] mobile:h-[50%] md:h-[100%] lg:h-[100%] h-full bg-[#f0f4ef]">
           <a
             href=""
             className=" text-textGray content uppercase group overflow-hidden "
@@ -402,8 +399,8 @@ const Navbar = ({ handleOpen }) => {
             <div className="overflow-hidden text-[1.2rem] ms-[2rem] relative z-[2] text-[#7D7E7F] ">
               <p className="text">05 - </p>
             </div>
-            <div className="overflow-hidden mt-4 text-[2.4rem] relative z-[2] text-[#6c757d] ">
-              <p className="text">get a quote</p>
+            <div className="overflow-hidden mt-4 mobile:text-[2rem] lg:text-[2.4rem] relative z-[2] text-[#6c757d] ">
+              <p className="text whitespace-nowrap ">get a quote</p>
             </div>
 
             <div className="w-full h-full absolute z-[1] translate-y-[100%] transition-all group-hover:translate-y-0 bg-[#6c757d] opacity-[0.5] "></div>
@@ -412,9 +409,9 @@ const Navbar = ({ handleOpen }) => {
             <div className="absolute bottom-0 w-0 h-[2px] bg-[#fff] group-hover:w-full transition-all duration-[1000ms] "></div>
           </a>
         </div>
-        <div className="right w-[50%] h-full flex relative bg-[#212529] ">
+        <div className="right lg:w-[50%] md:w-[50%] mobile:w-[100%] h-full flex relative bg-[#212529] ">
           <a
-            className="close-menu absolute overflow-hidden flex gap-[1rem] items-center top-10 right-10"
+            className="close-menu absolute overflow-hidden flex gap-[1rem] items-center lg:top-10 lg:right-10 mobile:top-2 mobile:right-2 "
             onClick={closeMenu}
           >
             <div class="cross text ">
@@ -523,8 +520,8 @@ const Navbar = ({ handleOpen }) => {
             </div>
           </a>
 
-          <div className="w-full h-full mb-10 pt-5  flex flex-col  items-center justify-between">
-            <div className="w-[300px] h-[300px] mobile:hidden sm:hidden lg:block md:block   border-[1px] border-[#fff] p-10 rounded-full ">
+          <div className="w-full h-full lg:mb-10 Bmobile:mb-5 pt-5 flex flex-col items-center justify-between">
+            <div className="lg:w-[300px] lg:h-[300px] mobile:w-[150px] mobile:hidden Bmobile:block  mobile:h-[150px] sm:block lg:block md:block border-[1px] border-[#fff] p-10 rounded-full ">
               <img
                 src={TransLogo}
                 className="w-full h-full object-cover"
@@ -532,54 +529,54 @@ const Navbar = ({ handleOpen }) => {
               />
             </div>
 
-            <div className=" text-textGray ps-2 pe-2 w-full flex gap-[5rem] justify-center">
-              <div className="  flex flex-col gap-8  ">
+            <div className=" text-textGray relative mobile:mt-5 Bmobile:mt-2  ps-2 pe-2 w-full flex lg:gap-[4rem] mobile:gap-4 justify-center">
+              <div className="  flex flex-col lg:gap-8 mobile:gap-2  ">
                 <div className="overflow-hidden">
-                  <p className="text-[1.5rem] text uppercase ">Email</p>
-                  <p className="cool-link text ">atulrathour888@gmail.com</p>
+                  <p className="lg:text-[1.5rem] mobile:text-[1rem] head text uppercase ">Email</p>
+                  <p className="cool-link text tail lg:text-[1rem] mobile:text-[0.8rem] ">atulrathour888@gmail.com</p>
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text text-[1.5rem] uppercase ">Phone</p>
-                  <p className="text cool-link">+91 63521 60172</p>
+                  <p className="text text-[1.5rem] head uppercase lg:text-[1.5rem] mobile:text-[1rem] ">Phone</p>
+                  <p className="text tail cool-link lg:text-[1rem] mobile:text-[0.8rem] ">+91 63521 60172</p>
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text text-[1.5rem] uppercase  mb-2 ">Social</p>
+                  <p className="text text-[1.5rem] uppercase head lg:text-[1.5rem] mobile:text-[1rem] mb-2 ">Social</p>
                   <div className="flex flex-col">
                     <a href="" className="overflow-hidden">
-                      <p className="cool-link text  ">Instagram</p>
+                      <p className="cool-link text tail lg:text-[1rem] mobile:text-[0.8rem] ">Instagram</p>
                     </a>
                     <a href="" className="overflow-hidden">
-                      <p className="cool-link text  ">Facebook</p>
+                      <p className="cool-link text tail lg:text-[1rem] mobile:text-[0.8rem] ">Facebook</p>
                     </a>
                     <a href="" className="overflow-hidden">
-                      <p className="cool-link text  ">twitter</p>
+                      <p className="cool-link text tail lg:text-[1rem] mobile:text-[0.8rem] ">twitter</p>
                     </a>
                   </div>
                 </div>
               </div>
-              <div className="  flex flex-col gap-8  ">
+              <div className="  flex flex-col lg:gap-8 mobile:gap-2  ">
                 <div className="overflow-hidden">
-                  <p className="text text-[1.5rem] uppercase ">Office</p>
-                  <p className="text cool-link">
+                  <p className="text text-[1.5rem] uppercase lg:text-[1.5rem] mobile:text-[1rem] ">Office</p>
+                  <p className="text cool-link lg:text-[1rem] mobile:text-[0.8rem] ">
                     1-1-2 Oshiage, Sumida City, <br /> 131-0045, Tokyo, Japan
                   </p>
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text text-[1.5rem] uppercase ">Appointment </p>
-                  <p className="text cool-link">+91 95681 60172</p>
+                  <p className="text text-[1.5rem] uppercase lg:text-[1.5rem] mobile:text-[1rem] ">Appointment </p>
+                  <p className="text cool-link lg:text-[1rem] mobile:text-[0.8rem]">+91 95681 60172</p>
                 </div>
                 <div className="overflow-hidden">
-                  <p className="text-[1.5rem] text uppercase  mb-2 ">Legal</p>
+                  <p className="text-[1.5rem] text uppercase lg:text-[1.5rem] mobile:text-[1rem] mb-2 ">Legal</p>
                   <div className="flex flex-col">
                     <a href="" className="overflow-hidden">
-                      <p className="cool-link text ">Terms and Condition</p>
+                      <p className="cool-link text lg:text-[1rem] mobile:text-[0.8rem] ">Terms and Condition</p>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-between text-textGray w-full pt-2 pb-2 items-center text-[0.8rem]  relative border-[#fff] ">
+            <div className="flex justify-between absolute bottom-0 text-textGray w-full pt-2 pb-2 items-center text-[0.8rem]  relative border-[#fff] ">
               <div className="w-full h-[1px] line absolute top-0 bg-[#fff] "></div>
               <p className="ms-10">
                 © 2024 R&J foor stuff trading, All rights reserved

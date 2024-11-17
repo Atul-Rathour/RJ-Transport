@@ -29,7 +29,8 @@ export default {
       },
 
       screens:{
-        mobile: '350px'
+        mobile: '350px',
+        Bmobile : '400px'
       }
 
     },

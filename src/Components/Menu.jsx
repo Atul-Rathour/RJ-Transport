@@ -148,9 +148,7 @@ const Menu = forwardRef((props, ref) => {
     });
   };
 
-  useImperativeHandle(ref, () => ({
-    openMenu,
-  }));
+ 
 
   // if (!isOpen) return null; // Don't render the panel if it's closed
 

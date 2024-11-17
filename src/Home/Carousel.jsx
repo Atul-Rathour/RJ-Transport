@@ -11,7 +11,7 @@ const ImageCarousel = () => {
     {
         imgSrc: Img1,
         altText: "Image 1",
-        button : true,
+        button : false,
         content: 'Explore world with us',
         video : false
     },
@@ -26,7 +26,7 @@ const ImageCarousel = () => {
     {
         imgSrc: Img3,
         altText: "Image 3",
-        button : true,
+        button : false,
         content: 'Get a quote',
         video : false
     },

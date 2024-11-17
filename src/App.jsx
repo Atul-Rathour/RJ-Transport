@@ -5,17 +5,11 @@ import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
 import Cursor from "./Components/Cursor/Cursor";
-import Menu from "./Components/Menu";
 
 const App = () => {
   const [isLoading, setIsloading] = useState(true);
   const [introComplete, setIntroComplete] = useState(false);
-  const MenuRef = useRef()
 
-  const handleOpen = () => {
-    MenuRef.current.openMenu();
-    MenuRef.current.openMenu();
-  };
 
 
   useEffect(() => {
@@ -42,9 +36,7 @@ const App = () => {
       {introComplete && (
         <div  >
         <Cursor />
-          <Navbar handleOpen={handleOpen} />
-          {/* <MenuPanel ref={MenuRef} /> */}
-          {/* <Menu ref={MenuRef} /> */}
+          <Navbar  />
           <Home />
           <Footer />
         </div>
